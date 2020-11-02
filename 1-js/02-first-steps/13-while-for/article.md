@@ -2,7 +2,7 @@
 
 Abbiamo spesso bisogno di eseguire la stessa azione più volte di fila.
 
-Ad esempio, quando abbiamo bisogno di ritornare della merce da una lista una dopo l'altra. O anche solo eseguire lo stesso codice per ogni numero da 1 a 10.
+Ad esempio, quando abbiamo bisogno di estrarre una lista di merci, una dopo l'altra. O anche solo eseguire lo stesso codice per ogni numero da 1 a 10.
 
 I *Cicli* sono un modo di ripetere la stessa parte di codice più volte.
 
@@ -17,7 +17,7 @@ while (condition) {
 }
 ```
 
-Fino a che la `condition` è `true`, il `code` dal corpo del ciclo viene eseguito.
+Fino a che la `condition` è `true`, il `code` del corpo del ciclo viene eseguito.
 
 Ad esempio, il ciclo qui sotto stampa `i` fino a che `i < 3`:
 
@@ -29,11 +29,11 @@ while (i < 3) { // mostra 0, poi 1, poi 2
 }
 ```
 
-Una singola esecuzione del corpo del ciclo viene chiamata *un iterazione*. Il ciclo nell'esempio sopra fa tre iterazioni.
+Una singola esecuzione del corpo del ciclo viene chiamata *una iterazione*. Il ciclo nell'esempio sopra fa tre iterazioni.
 
-Se nell'esempio sopra non ci fosse `i++`, il ciclo si ripeterebbe per sempre (in teoria). Nella pratica, il browser ha dei metodi per bloccare questi cicli, con JavaScript server-side è necessario arrestare il processo.
+Se nell'esempio sopra non ci fosse `i++`, il ciclo si ripeterebbe per sempre (in teoria). In pratica, il browser ha dei metodi per bloccare questi cicli, e con JavaScript server-side possiamo fermare il processo.
 
-Qualsiasi espressione o variabile può essere utilizzata come condizione di un ciclo, non solo un confronto. Le espressioni vengono valutate e convertite al tipo bool dal ciclo `while`.
+Possiamo utilizzare come condizione qualsiasi espressione o variabile, non solo gli operatori di confronto. Le espressioni vengono valutate e convertite al tipo bool dal ciclo `while`.
 
 Ad esempio, un modo più breve di scrivere `while (i != 0)` potrebbe essere `while (i)`:
 
@@ -80,11 +80,11 @@ do {
 } while (i < 3);
 ```
 
-Questa tipo di sintassi viene usata molto raramente ad eccezione dei casi in cui si vuole che il corpo del ciclo venga eseguito **almeno una volta** senza controllo sulla condizione. La forma più utilizzata è comunque: `while(…) {…}`.
+Questo tipo di sintassi viene usato molto raramente, fanno eccezione solo i casi in cui si vuole che il corpo del ciclo venga eseguito **almeno una volta** senza controllo sulla condizione. La forma più utilizzata è comunque: `while(…) {…}`.
 
 ## Il ciclo "for" 
 
-Il ciclo `for` è spesso il più utilizzato.
+Il ciclo `for` è il più complesso, ma anche il più utilizzato.
 
 La sua forma è del tipo:
 
@@ -94,7 +94,7 @@ for (begin; condition; step) {
 }
 ```
 
-Cerchiamo ora di capire il significato tramite degli esempi. Il ciclo sotto esegue `alert(i)` per `i` da `0` fino a (ma non incluso) `3`:
+Cerchiamo ora di capire il significato tramite degli esempi. Il ciclo sotto esegue `alert(i)` per `i` da `0` fino a `3` (escluso):
 
 ```js run
 for (let i = 0; i < 3; i++) { // mostra 0, poi 1, poi 2
@@ -106,10 +106,10 @@ Esaminiamo l'istruzione `for` parte per parte:
 
 | Parte |          |                                                                            |
 |-------|----------|----------------------------------------------------------------------------|
-| begin | `i = 0`    | Viene eseguito una volta all'entrata nel ciclo.                          |
-| condition | `i < 3`| Viene controllata prima di ogni iterazione del ciclo, se fallisce il ciclo si interrompe.|
-| body | `alert(i)`| Viene eseguito fino a che vale la condizione.
-| step| `i++`      | Viene eseguito prima del corpo ad ogni iterazione, ma dopo il controllo della condizione.|
+| begin | `i = 0`    | Viene eseguito una volta entrati nel ciclo.                          |
+| condition | `i < 3`| Viene controllata prima di ogni iterazione del ciclo, se è "false" il ciclo si interrompe.|
+| body | `alert(i)`| Viene eseguito fino a che la condizione è valida.
+| step| `i++`      | Viene eseguito dopo il corpo ad ogni interazione|
 
 L'iterazione generalmente funziona nel seguente modo:
 ```
@@ -131,17 +131,17 @@ Questo è quello che succede esattamente nel nostro codice:
 
 // inizia l'esecuzione
 let i = 0
-// if condition → esegue il corpo e avanza
+// if condition → esegue il corpo ed esegue step
 if (i < 3) { alert(i); i++ }
-// if condition → esegue il corpo e avanza
+// if condition → esegue il corpo e esegue step
 if (i < 3) { alert(i); i++ }
-// if condition → esegue il corpo e avanza
+// if condition → esegue il corpo e esegue step
 if (i < 3) { alert(i); i++ }
 // ...si conclude, perché ora i == 3
 ```
 
 ````smart header="Dichiarazioni di variabili inline"
-Qui il "counter" è una variabile `i` che viene dichiarata all'interno del ciclo. Questa viene chiamata una dichiarazione di una variabile "inline". Queste variabili sono visibile solo all'interno del ciclo.
+Qui il "counter" è una variabile `i` che viene dichiarata all'interno del ciclo. Questa viene chiamata una dichiarazione di una variabile "inline". Queste variabili sono visibili solo all'interno del ciclo.
 
 ```js run
 for (*!*let*/!* i = 0; i < 3; i++) {
@@ -207,9 +207,9 @@ Nota che le due `;` del ciclo `for` devono essere presenti, altrimenti sarebbe u
 
 Normalmente un ciclo termina quando la condizione diventa falsa.
 
-Ma è possibile forzare l'uscita in qualsiasi momento. C'è una speciale direttiva `break` per fare questo.
+Ma è possibile forzare l'uscita in qualsiasi momento utilizzando il comando speciale `break`.
 
-Ad esempio, il ciclo sotto chiede all'utente una serie di numeri, ma "termina" quando nessun numero viene inserito: 
+Ad esempio, il ciclo sotto chiede all'utente una serie di numeri, ma si interrompe quando nessun numero viene inserito: 
 
 ```js run
 let sum = 0;
@@ -234,7 +234,7 @@ La combinazione "ciclo infinito + `break` quando necessario" è ottima per le si
 
 ## Vai alla prossima iterazione [#continue]
 
-La direttiva `continue` è una versione leggera del `break`. Non blocca l'intero ciclo. Invece interrompe solo l'iterazione corrente e forza il ciclo a reiniziare dall'iterazione successiva (se la condizione è soddisfatta).
+La direttiva `continue` è una "versione leggera" del `break`. Non blocca l'intero ciclo. Invece interrompe solo l'iterazione corrente e forza il ciclo a ricominciare dall'iterazione successiva (se la condizione è soddisfatta).
 
 Possiamo utilizzarla se abbiamo finito con le operazioni che ci interessano in una data iterazione e vogliamo passare a quella seguente.
 
@@ -264,14 +264,13 @@ for (let i = 0; i < 10; i++) {
 
 }
 ```
-
-Dal punto di vista tecnico è identico all'esempio sopra. Ovviamente possiamo raccogliere il codice in un blocco `if` piuttosto di usare `continue`.
+Tecnicamente è identico all'esempio sopra. Ovviamente possiamo raccogliere il codice in un blocco `if` piuttosto di usare `continue`.
 
 Ma come effetto collaterale abbiamo aggiunto un livello di annidamento ulteriore (la chiamata `alert` all'interno delle parentesi graffe). Se il codice dentro `if` è più lungo di un paio di righe, si rischia di perdere in leggibilità.
 ````
 
-````warn header="Vietato `break/continue` alla desta di '?'"
-Da notare che questo costrutto sintattico non è un espressione e non può quindi essere utilizzato con l'operatore ternario `?`. In particolare, direttive come  `break/continue` non sono concesse.
+````warn header="Vietato `break/continue` alla destra di '?'"
+Nota bene: questo costrutto sintattico non è un'espressione e non può quindi essere utilizzato con l'operatore ternario `?`. In particolare, direttive come  `break/continue` non sono concesse.
 
 Ad esempio, se prendiamo questo codice:
 
@@ -371,7 +370,7 @@ break label;  // non salta all'etichetta sotto
 label: for (...)
 ```
 
-La chiamata a `break/continue` è possibile solo dall'interno di un ciclo, e l'etichetta deve essere da qualche parte sopra la chiamata.
+La chiamata a `break/continue` è possibile solo dall'interno di un ciclo e l'etichetta deve essere da qualche parte sopra la chiamata.
 ````
 
 ## Summary
