@@ -8,12 +8,12 @@ Vediamo cosa rende JavaScript così speciale, cosa è possibile ottenere tramite
 
 I programmi che sfruttano questo linguaggio vengono chiamati *script*. Possono essere scritti direttamente nel documento HTML ed eseguiti in automatico al caricamento della pagina.
 
-Gli script vengono scritti ed eseguiti come testo semplice. Infatti non richiedono particolari conoscenze, ne di essere compilati per poterli eseguire.
+Gli script vengono scritti ed eseguiti come testo semplice. Infatti non richiedono particolari conoscenze, né di essere compilati per poterli eseguire.
 
 In questo aspetto, JavaScript è molto differente da un altro linguaggio chiamato [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
 ```smart header="Perchè si chiama <u>Java</u>Script?"
-In origine JavaScript aveva un altro nome: "LiveScript". In quel periodo Java era molto popolare, per questo si è pensato che identificare questo linguaggio come il "fratello minore" di Java potesse aiutare nella sua diffusione.
+In origine JavaScript aveva un altro nome: "LiveScript". In quel periodo Java era molto popolare, per questo si è pensato che identificare questo linguaggio come il "fratello minore" di Java potesse aiutare alla sua diffusione.
 
 Evolvendosi, JavaScript è diventato un linguaggio completamente indipendente, con delle specifiche personali chiamate [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), e adesso non ha quasi nulla in comune con Java.
 ```
@@ -28,7 +28,7 @@ Esistono altri motori JavaScript, tra cui:
 - [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- per Firefox.
 - ...Ci sono altri codenames come "Chakra" per IE, "ChakraCore" specifico per Microsoft Edge, "Nitro" e "SquirrelFish" per Safari, etc.
 
-I nomi citati sopra possono essere utili da ricordare, poichè si possono trovare spesso in articoli che trattano di sviluppo web. Anche noi li useremo. Ad esempio, se "una caratteristica X è supportata da V8", probabilmente funzioneranno senza problemi in Chrome e Opera.
+I nomi citati sopra possono essere utili da ricordare, poichè si possono trovare spesso in articoli che trattano di sviluppo web. Anche noi li useremo. Ad esempio, se "una caratteristica X è supportata da V8", probabilmente funzionerà senza problemi in Chrome e Opera.
 
 ```smart header="Come funzionano questi motori?"
 
@@ -64,9 +64,9 @@ Le possibilità di JavaScript nel browser sono limitate per la sicurezza dell'ut
 
 Degli esempi di queste restrizioni possono essere:
 
-- JavaScript in una pagina web non può leggere o scrivere in qualsiasi file nell'hard disk, ne copiare o eseguire programmi. Non ha accesso diretto alle funzioni di sistema operativo.
+- JavaScript in una pagina web non può leggere o scrivere in qualsiasi file nell'hard disk, né copiare o eseguire programmi. Non ha accesso diretto alle funzioni di sistema operativo.
 
-    I moderni browser gli consentono di lavorare con i file, sempre con un accesso limitato e comunque solo se il comando proviene da utente, come il "dropping" di un file nella finestra del browser, o con la selezione  tramite il tag `<input>`.
+    I moderni browser gli consentono di lavorare con i file, sempre con un accesso limitato e comunque solo se il comando proviene da utente, come il "dropping" di un file nella finestra del browser, o con la selezione tramite il tag `<input>`.
 
     Ci sono anche funzionalità che consentono di interagire con la camera/microfono e altri dispositivi, ma in ogni caso richiedono il permesso esplicito dell'utente. Quindi una pagina con JavaScript abilitato non può attivare la web-cam di nascosto, osservare i nostri comportamenti e inviare le informazioni all' [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
 - Pagine o schede diverse generalmente non sono a conoscenza dell'esistenza delle altre. In certi casi può però capitare, ad esempio che una finestra ne apra un'altra tramite JavaScript. Ma anche in questo caso, il codice JavaScript non può accedere all'altra pagina se non appartiene allo stesso sito (stesso dominio, protocollo o porta).
