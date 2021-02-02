@@ -101,7 +101,7 @@ La sintassi di JavaScript non soddisfa le necessità di tutti. Alcune persone ne
 
 Questo è prevedibile, poichè i progetti e i requisiti sono diversi di persona in persona.
 
-Quindi recentemente un'elevata quantità di nuovi linguaggi è apparsa, che vengono *convertiti* in JavaScript prima di essere eseguite nel browser.
+Infatti, recententemente, è venuta fuori una cospicia quantità di linguaggi che vengono *convertiti* in JavaScript prima di essere eseguite nel browser.
 
 Gli strumenti moderni rendono la conversione molto veloce e pulita, consentendo agli sviluppatori di programmare in un altro linguaggio e di auto-convertirlo "sotto il cofano".
 
@@ -113,10 +113,10 @@ Esempi di alcuni linguaggi:
 - [Dart](https://www.dartlang.org/) è un linguaggio autonomo che possiede il suo motore che esegue in ambienti esterni al browser (come mobile apps). E' stato introdotto da Google come alternativa a JavaScript, ma attualmente, i browser richiedono la conversione in JavaScript, proprio come i precedenti.
 - [Brython](https://brython.info/) è un traduttore, che codice scritto in Python in codice JavaScript, consente quindi di scrivere applicazioni in Python senza utilizzare JavaScript.
 
-Ce ne sono molti altri. Ovviamente se utilizziamo uno di questi linguaggi, dovremmo almeno conoscere JavaScript, per comprendere cosa stiamo facendo.
+Ce ne sono molti altri. Ovviamente se utilizziamo uno di questi linguaggi dovremmo almeno conoscere JavaScript per comprendere cosa stiamo facendo.
 
 ## Riepilogo
 
 - JavaScript è stato creato come linguaggio unico per i browser, ma attualmente viene utilizzato con efficacia in molti altri ambienti.
 - Attualmente JavaScript si trova in una posizione unica come linguaggio più diffuso per lo sviluppo web, grazie ad una completa integrazione con HTML/CSS.
-- Ci sono molti linguaggio che possono essere "convertiti" in JavaScript che risolvono certe esigenze. E' fortemente consigliato di leggere brevemente le funzionalità di alcuni di essi, però solo dopo essersi focalizzati su JavaScript.
+- Ci sono molti linguaggi che possono essere "convertiti" in JavaScript che risolvono certe esigenze. È fortemente consigliato leggere brevemente le funzionalità di alcuni di essi, però solo dopo essersi focalizzati su JavaScript.
