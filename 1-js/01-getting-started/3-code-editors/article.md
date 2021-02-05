@@ -1,12 +1,12 @@
 # Code editor
 
-Un code editor è il posto in cui i programmatori spendono la maggior parte del loro tempo.
+Il code editor è il posto in cui i programmatori spendono la maggior parte del loro tempo.
 
 Ci sono due principali tipi di code editor: IDE ed editor semplici. Molte persone si trovano bene a sceglierne uno di entrambe le categorie.
 
 ## IDE
 
-Il termine [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) descrive un potente editor con molte funzionalità che coprono lo sviluppo dell'intero progetto. Come anche il nome suggerisce, non sono semplici editor, ma sono degli "ambienti di sviluppo" scalabili.
+Il termine [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) descrive un potente editor con molte funzionalità che coprono lo sviluppo dell'intero progetto. Come anche il nome suggerisce non sono semplici editor, ma sono degli "ambienti di sviluppo" scalabili.
 
 Un IDE carica il progetto (possono essere molti file), consente la navigazione tra i file, fornisce il completamento automatico basandosi sull'intero progetto (non sul singolo file), può essere integrato con sistemi di gestione della versione (come [git](https://git-scm.com/)), un ambiente dedicato al test e altre funzionalità per i vari livelli del progetto.
 
@@ -17,7 +17,7 @@ Se non hai ancora considerato di scegliere un IDE, dai un occhiata a queste alte
 
 Tutti gli IDE sono multi-piattaforma.
 
-Per Windows, c'e anche l'editor "Visual Studio", da non confondere con "Visual Studio Code". "Visual Studio" è a pagamento ed è un potente editor disponibile solo per Windows, ottimo per piattaforme .NET. E' disponibile una versione gratuita ([Visual Studio Community](https://www.visualstudio.com/vs/community/).
+Per Windows, c'e anche l'editor "Visual Studio", da non confondere con "Visual Studio Code". "Visual Studio" è a pagamento ed è un potente editor disponibile solo per Windows, ottimo per piattaforme .NET. È disponibile una versione gratuita ([Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
 Molti IDE sono a pagamento ma offrono un periodo di prova gratuito. Solitamente il loro costo è trascurabile se paragonato allo stipendio di una sviluppatore qualificato, è quindi importante scegliere il migliore in base alle proprie esigenze.
 
@@ -41,7 +41,7 @@ Meritano attenzione le seguenti opzioni:
 
 ## Non intestarditevi
 
-Gli editor elencanti sopra sono sono quelli che io e i miei amici, che considero buoni sviluppatori, abbiamo utilizzato senza problemi per molto tempo.
+Gli editor elencati sopra sono sono quelli che io e i miei amici, che considero buoni sviluppatori, abbiamo utilizzato senza problemi per molto tempo.
 
 Ci sono altri grandi editor nel nostro grande mondo. Scegli quindi quello che più ti si addice.
 
