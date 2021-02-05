@@ -1,7 +1,7 @@
 
 # Manuali e Specifiche
 
-Questo libro è un *tutorial*. L'obiettivo è quello di aiutarti ad apprender il linguaggio gradualmente. Una volta che avrai familiarizzato con le basi avrai bisogno di ulteriori risorse.
+Questo libro è un *tutorial*. L'obiettivo è quello di aiutarti ad apprendere il linguaggio gradualmente. Una volta che avrai familiarizzato con le basi avrai bisogno di ulteriori risorse.
 
 ## Specifiche
 
