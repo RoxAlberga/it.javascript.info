@@ -37,6 +37,6 @@ Per verificare il loro supporto da parte dei browser, si possono consultare:
 - <http://caniuse.com> - per visualizzare tabelle di supporto per ogni caratteristica, ad esempio per visualizzare le funzioni di crittografia: <http://caniuse.com/#feat=cryptography>.
 - <https://kangax.github.io/compat-table> - una tabella con le caratteristiche del linguaggio e i motori che le supportano.
 
-Tutte le risorse elencate finora sono utili nella sviluppo di tutti i giorni, in quanto contengono ottime informazioni riguardo i dettagli del linguaggio, il loro support etc.
+Tutte le risorse elencate finora sono utili nello sviluppo di tutti i giorni, in quanto contengono ottime informazioni riguardo i dettagli del linguaggio, il loro support etc.
 
 Ti consiglio quindi di ricordartele (in alternativa puoi consultare questa pagina), nel caso dovessi avere bisogno di informazioni dettagliate riguardo qualche caratteristica particolare.
